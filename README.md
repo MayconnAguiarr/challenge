@@ -3,7 +3,8 @@
 Crie uma classe Pizza que possua o método adicionaIngrediente(Ingrediente ingrediente) <br>
 que receba um Ingrediente com os campos String nome, int quantidade. <br>
 
-A classe Pizza também deve possuir o método getPreco() que calcula da seguinte forma: 2 ingredientes ou menos custam 15 reais,<br> de 3 a 5 ingredientes custam 20 reais e mais de 5 ingredientes custa 23 reais.
+A classe Pizza também deve possuir o método getPreco() que calcula da seguinte forma: 2 ingredientes ou menos custam 15 <br>
+reais, de 3 a 5 ingredientes custam 20 reais e mais de 5 ingredientes custa 23 reais.
 
 É preciso contabilizar os ingredientes gastos por todas as pizzas! <br> 
 Utilize uma variável na classe Pizza para guardar esse tipo de informação <br>
