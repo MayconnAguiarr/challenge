@@ -15,7 +15,7 @@ public class CarrinhoDeCompra {
 		BigDecimal valorTotalPizza = BigDecimal.ZERO;
 		
 		for (int i = 0; i < pizzas.size(); i++) {
-			valorTotalPizza = valorTotalPizza.add(pizzas.get(i).gastoPorPizza);
+			valorTotalPizza = valorTotalPizza.add(pizzas.get(i).getPreco());
 		}
 		return valorTotalPizza;
 	}

@@ -22,7 +22,6 @@ public class Main {
 		pizza.adicionaIngrediente(ingrediente1);
 		pizza.adicionaIngrediente(ingrediente2);
 		pizza.adicionaIngrediente(ingrediente3);
-		pizza.contabilizaGasto();
 
 		Pizza pizza1 = new Pizza();
 		pizza1.adicionaIngrediente(ingrediente4);
@@ -32,12 +31,10 @@ public class Main {
 		pizza1.adicionaIngrediente(ingrediente6);
 		pizza1.adicionaIngrediente(ingrediente3);
 		pizza1.adicionaIngrediente(ingrediente5);
-		pizza1.contabilizaGasto();
 
 		Pizza pizza2 = new Pizza();
 		pizza2.adicionaIngrediente(ingrediente7);
 		pizza2.adicionaIngrediente(ingrediente2);
-		pizza2.contabilizaGasto();
 
 		CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
 		carrinhoDeCompra.addPizza(pizza);
@@ -48,13 +45,13 @@ public class Main {
 
 		for (int i = 0; i < carrinhoDeCompra.pizzas.size(); i++) {
 			System.out.println("##### Pizza " + i + " #####");
-			System.out.println("###Ingrediente:");
+			System.out.println("###Ingrediente / Quantidade");
 			List<Ingrediente> ingredientes = carrinhoDeCompra.pizzas.get(i).ingredientes;
 
 			for (int j = 0; j < ingredientes.size(); j++) {
-				System.out.println(ingredientes.get(j).getNome() + " - " + ingredientes.get(j).getQuantidade());
+				System.out.println(ingredientes.get(j).getNome() + "  -  " + ingredientes.get(j).getQuantidade());
 			}	
-			System.out.println("##Valor = " + carrinhoDeCompra.pizzas.get(i).gastoPorPizza);
+			System.out.println("##Valor = " + carrinhoDeCompra.pizzas.get(i).getPreco());
 
 			System.out.println("---------------------------------------------------------------------------------");
 		}
