@@ -35,11 +35,14 @@ public class Main {
 		Pizza pizza2 = new Pizza();
 		pizza2.adicionaIngrediente(ingrediente7);
 		pizza2.adicionaIngrediente(ingrediente2);
+		
+		Pizza pizza3 = new Pizza();
 
 		CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
 		carrinhoDeCompra.addPizza(pizza);
 		carrinhoDeCompra.addPizza(pizza1);
 		carrinhoDeCompra.addPizza(pizza2);
+		carrinhoDeCompra.addPizza(pizza3);
 
 		System.out.println("########################## Carrinho de Compra ########################################");
 
