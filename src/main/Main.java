@@ -8,7 +8,7 @@ import services.Pizza;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		Ingrediente ingrediente1 = new Ingrediente("Presunto", 2);
 		Ingrediente ingrediente2 = new Ingrediente("Mussarela", 3);
@@ -39,10 +39,14 @@ public class Main {
 		Pizza pizza3 = new Pizza();
 
 		CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
-		carrinhoDeCompra.addPizza(pizza);
+		try {
+		carrinhoDeCompra.addPizza(pizza);						
 		carrinhoDeCompra.addPizza(pizza1);
 		carrinhoDeCompra.addPizza(pizza2);
 		carrinhoDeCompra.addPizza(pizza3);
+		}catch (Exception e) {
+			System.out.println("aconteceu um erro : " + e.getMessage() );
+		}
 
 		System.out.println("########################## Carrinho de Compra ########################################");
 
